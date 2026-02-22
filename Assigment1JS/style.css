@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Open Sans", sans-serif;
+    
+    
+}
+
+html,body{
+    margin: 0 auto;
+    height: 100%;
+    width: 95%;
+    
+}
+
+h1   {
+    width: 100%;
+}
+
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="range"]
+{
+  accent-color: rgb(90, 90, 90);
+  border-radius: 5px;
+  height: 10px;
+}
+
+#sendbutton {
+  background-color: rgb(90, 90, 90);
+  color: white;
+  padding: 10px 55px;
+  border: none;
+  border-radius: 15px;
+
+  display: block;
+  margin: auto;
+
+  
+}
+
+
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+fieldset {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#output {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid #000;
+  background-color: #dbdbdb;
+  white-space: pre-wrap;
+
+}

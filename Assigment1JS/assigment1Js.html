@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>assignment 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Assignment 1</h1>
+    <form id="myform">
+      <label for="fullname">Fullname</label>
+      <input
+        type="text"
+        id="fullname"
+        required
+        autofocus
+        placeholder="Text fullname"
+        size="60"
+        maxlength="80"
+      />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        required
+        pattern="^[a-zA-Z0-9_\.\,\-\:\;\?\!]{8,20}$"
+        title="8-20 symbol: a-z A-Z 0-9 _ . , - : ; ? !"
+      />
+
+      <label for="password2">Password again</label>
+      <input
+        type="password"
+        id="password2"
+        required
+        pattern="^[a-zA-Z0-9_\.\,\-\:\;\?\!]{8,20}$"
+      />
+
+      <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" name="gender" value="Male" required /> Male
+        <input type="radio" name="gender" value="Female" /> Female
+        <input type="radio" name="gender" value="Other" /> Other
+      </fieldset>
+
+      <fieldset>
+        <legend>Hobbies</legend>
+        <input type="checkbox" name="hobby" value="Games" /> Games
+        <input type="checkbox" name="hobby" value="Music" /> Music
+        <input type="checkbox" name="hobby" value="Sport" /> Sport
+        <input type="checkbox" name="hobby" value="TV" /> TV
+      </fieldset>
+
+      <label for="birthdate">Birth Date</label>
+      <input type="date" id="birthdate" />
+
+      <label>height (cm)</label>
+      <input type="range" id="heightrange" min="40" max="250" value="170" />
+      <input type="number" id="heightnumber" min="40" max="250" value="170" />
+
+      <label for="color">Favorite color</label>
+      <input type="color" id="color" />
+
+      <label for="country">Home Country</label>
+      <select id="country">
+        <option value="Finland" selected>Finland</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Norway">Norway</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Estonia">Estonia</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Lithuania">Lithuania</option>
+      </select>
+
+      <label for="profession">Profession</label>
+      <input list="professionlist" id="profession" />
+      <datalist id="professionlist">
+        <option value="nurse"></option>
+        <option value="plumber"></option>
+        <option value="teacher"></option>
+        <option value="builder"></option>
+      </datalist>
+
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        rows="6"
+        cols="60"
+        maxlength="1000"
+        placeholder="Text a message..."
+        required
+      ></textarea>
+
+      <br /><br />
+
+      <button id="sendbutton" type="submit">Send</button>
+    </form>
+
+    <div id="output"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
