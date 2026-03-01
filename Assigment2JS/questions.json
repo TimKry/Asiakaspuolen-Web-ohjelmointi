@@ -1,0 +1,31 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "Internet at 6 pm",
+      "Car stuck in traffic",
+      "Booting virtualbox",
+      "Nothing compares to 5 minutes waiting at the bus stop"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What's scarier?",
+    "options": [
+      "One error in the code",
+      "Ten errors in the code",
+      "The code works, but you don't know why"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "which weighs more?",
+    "options": [
+      "1 kg of cotton wool",
+      "1 kg of stone",
+      "1 kg of experiences",
+      "Everything weighs the same"
+    ],
+    "answer": 2
+  }
+]
